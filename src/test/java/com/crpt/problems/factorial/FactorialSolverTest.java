@@ -1,19 +1,16 @@
-package com.crpt.problems;
-
-import static org.junit.Assert.assertTrue;
+package com.crpt.problems.factorial;
 
 import com.crpt.problems.factorial.core.FactorialSolver;
 import com.crpt.problems.factorial.core.FactorizationFactorialSolver;
 import com.crpt.problems.factorial.core.SimpleFactorialSolver;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class FactorialSolverTest
-{
+public class FactorialSolverTest {
+
     private FactorialSolver simpleSolver = new SimpleFactorialSolver();
     private FactorialSolver factorizationSolver = new FactorizationFactorialSolver();
 
@@ -48,6 +45,4 @@ public class FactorialSolverTest
     public void wrongFormat_more_than_maxInt_simple() {
         simpleSolver.getZeros(Integer.MAX_VALUE + 1);
     }
-
-
 }

@@ -12,6 +12,8 @@ public class FactorizationFactorialSolver implements FactorialSolver {
     /**
      * Реализация задачи поиска нулей с помощью формулы для разложения факториала на простые
      * множители: a = [n/p] + [n/p^2] + ..., где a = кол-во множителей p; p = множитель (= 5 в случае задачи)
+     * <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB#%D0%A0%D0%B0%D0%B7%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BD%D0%B0_%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%B0">
+     * Wiki</a>.
      *
      * @param n факториал n (n!)
      * @return кол-во нулей n!

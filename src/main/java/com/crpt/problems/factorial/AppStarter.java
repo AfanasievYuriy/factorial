@@ -17,8 +17,7 @@ public class AppStarter {
             if (n > Integer.MAX_VALUE) {
                 throw new NumberFormatException();
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("N have to be integer value > 0 and < 2 147 483 647 (MAX_INT)");
             System.exit(2);
         }
@@ -26,8 +25,7 @@ public class AppStarter {
         try {
             System.out.println("Simple Impl: \t\tNumber of zeros in " + n + "! : " + new SimpleFactorialSolver().getZeros(n));
             System.out.println("Factorization Impl: Number of zeros in " + n + "! : " + new FactorizationFactorialSolver().getZeros(n));
-        }
-        catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.out.println("Unable to count zeros: " + e.getMessage());
         }
     }
