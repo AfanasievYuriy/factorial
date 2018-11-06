@@ -24,7 +24,7 @@ public class AppStarter {
         }
 
         try {
-            System.out.println("Simple Impl: Number of zeros in " + n + "! : " + new SimpleFactorialSolver().getZeros(n));
+            System.out.println("Simple Impl: \t\tNumber of zeros in " + n + "! : " + new SimpleFactorialSolver().getZeros(n));
             System.out.println("Factorization Impl: Number of zeros in " + n + "! : " + new FactorizationFactorialSolver().getZeros(n));
         }
         catch (NumberFormatException e) {
