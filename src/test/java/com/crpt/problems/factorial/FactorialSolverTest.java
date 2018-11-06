@@ -6,9 +6,7 @@ import com.crpt.problems.factorial.core.SimpleFactorialSolver;
 import org.junit.Assert;
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
+
 public class FactorialSolverTest {
 
     private FactorialSolver simpleSolver = new SimpleFactorialSolver();
@@ -18,6 +16,12 @@ public class FactorialSolverTest {
     public void successfulCalculation_100() {
         Assert.assertEquals(24, simpleSolver.getZeros(100L));
         Assert.assertEquals(24, factorizationSolver.getZeros(100L));
+    }
+
+    @Test
+    public void successfulCalculation_not_even_10734() {
+        Assert.assertEquals(2680, simpleSolver.getZeros(10734));
+        Assert.assertEquals(2680, factorizationSolver.getZeros(10734));
     }
 
     @Test
